@@ -3,15 +3,12 @@ package CodingAssignment;
 import java.util.Scanner;
 
 public class Program1 {
-
     static class Calculator {
         double a, b;
-
         Calculator(double a, double b) {
             this.a = a;
             this.b = b;
         }
-
         double calculate(String operation) {
             if (operation.equalsIgnoreCase("add")) {
                 return a + b;
@@ -23,15 +20,13 @@ public class Program1 {
                 if (b == 0) {
                     System.out.println("Error: Cannot divide by zero");
                     return 0;
-                }
-                return a / b;
+                }return a / b;
             } else {
                 System.out.println("Invalid operation");
                 return 0;
             }
         }
     }
-
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a: ");
